@@ -79,6 +79,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
+                    @can('edit-topic')
+                       <p>Can edit Topic</p>
+                    @endcan
+
+                    @can('delete-topic')
+                       <p>Delete topic</p>
+                    @endcan
                     Laravel
                 </div>
 

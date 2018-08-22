@@ -36,6 +36,7 @@ class User extends Authenticatable
     public function hasRole($role)
     {
         if (is_string($role)) {
+            dd($this->roles);
             return $this->roles->contains('name', $role);
         }
 
@@ -54,7 +55,7 @@ class User extends Authenticatable
     {
         if (is_string($role)) {
             return $this->roles()->save(
-                Role::whereName($role)->firstOrFail();
+                Role::whereName($role)->firstOrFail()
             );
         }
         return $this->roles()->save($role);
