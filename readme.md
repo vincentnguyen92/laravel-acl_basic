@@ -1,4 +1,4 @@
-# ACL Basic for Laravel or Eloquent projects
+# ACL Basic for Laravel
 
 ## Getting Started
 
